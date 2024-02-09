@@ -17,6 +17,8 @@ jobs:
               uses: borales/actions-yarn@v4
               with:
                   cmd: install
+            - name: Remove dist from .gitignore
+              run: sed -i '/dist/d' .gitignore
             - name: Build
               run: BASE_URL="./vidit" yarn build
             - name: Deploy
