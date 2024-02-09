@@ -18,7 +18,7 @@ jobs:
               with:
                   cmd: install
             - name: Build
-              run: yarn build
+              run: BASE_URL="./vidit" yarn build
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3
               with:
