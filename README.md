@@ -2,7 +2,7 @@
 
 ## Демо
 
-http://overred.ghithub.io/vidit
+https://overred.github.io/vidit
 
 ## Передача информации
 
