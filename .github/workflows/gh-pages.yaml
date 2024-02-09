@@ -17,10 +17,12 @@ jobs:
               uses: borales/actions-yarn@v4
               with:
                   cmd: install
+            - name: Remove dist from .gitignore
+              run: sed -i '/dist/d' .gitignore
             - name: Build
-              run: BASE_URL="./vidit" yarn build
+              run: BASE_URL="/vidit" yarn build
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: /vidit
+                  publish_dir: /dist
