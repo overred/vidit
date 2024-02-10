@@ -168,4 +168,60 @@ export const plans1: Plan[] = [
       }
     },
   },
+  {
+    id: 'test2',
+    title: 'Тариф Дани (Экспресс)',
+    description: 'Король монтажа выполнит любой каприз за ваши деньги',
+    icon: 'mdi-video',
+    pricing: {
+      initial: 0,
+      perMinute: 700,
+    },
+    deadline: {
+      minutesPerDay: 5,
+    },
+    currency: '₽',
+    applicability: {
+      duration: {
+        min: 1,
+        max: 120,
+      },
+      deadline: {
+        min: 1,
+        max: 30,
+      },
+      price: {
+        min: 500,
+        max: undefined,
+      }
+    },
+  },
+  {
+    id: 'test3',
+    title: 'Тариф Дани (Чилл)',
+    description: 'Король монтажа выполнит любой каприз за ваши деньги',
+    icon: 'mdi-video',
+    pricing: {
+      initial: 0,
+      perMinute: 400,
+    },
+    deadline: {
+      minutesPerDay: 1,
+    },
+    currency: '₽',
+    applicability: {
+      duration: {
+        min: 1,
+        max: 120,
+      },
+      deadline: {
+        min: 1,
+        max: 30,
+      },
+      price: {
+        min: 500,
+        max: undefined,
+      }
+    },
+  },
 ]
